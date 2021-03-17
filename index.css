@@ -1,0 +1,65 @@
+.text_frame {font-size:18px; height:25px; width:200px; padding: 1px 0; border:1px solid #000000;}
+.text_frame2 {font-size:18px; height:28px; width:80px; padding: 1px 0; border:1px solid #000000;}
+.absmiddle{
+	display:inline;
+	float:right;
+	margin-top:-26px;
+	margin-right:30px;
+}
+#user, #pass, {color:#000; padding: 0 15px 0 0; font-wight:bold;}
+#validation  {color:#; padding: 0 3px 0 0;}
+#enter {width:321px; height:59px; position:relative; top:-40px; left:-20px; background:#fff url("/images/enter.gif") no-repeat center center; cursor:hand; border:0px;}
+
+
+/* global */
+html{height: 100%;}
+body{ font-family: arial, sans-serif;  padding: 0px;  margin: 0px;  background:#fff url("/images/index_bg.jpg") repeat-x left top;  color: #555; text-align:center}
+p{margin: 0px;  padding: 0px 0px 16px 0px;  line-height: 1.7em;}
+h3{position:relative; top:-40px; left:0px; font-family: tahoma, arial, sans-serif; font-size: 120%; letter-spacing: .1em; padding:0px; margin-bottom:0px; color: #14b612; }
+form{padding: 0; margin: 0;}
+
+
+/* unordered list */
+ul{ 0px;  padding: 0px;}
+ul li{height:45px; list-style-type: square;  margin:0px;   padding: 0px;}
+
+/* ordered list */
+ol{ margin: 8px 0px 0px 24px;  padding: 0px;}
+ol li{ margin: 0px 0px 11px 0px;   padding: 0px;}
+
+#footer { margin-left: auto;   margin-right: auto;}
+/* main container */
+#main{  width:900px; height:573px;  background:#fff url(/images/index/bg_blue.jpg) no-repeat;  color: #555; margin:0 auto;}
+#main a{color:#fff; text-decoration:none;font-weight:bold}
+#main a:hover {color:#d4f0f4; text-decoration:none;font-weight:bold}
+/* navigation menu */
+
+input.searchfield{ background: #FFF;   border: 1px solid #777;   padding: 2px;}
+input.searchbutton{ background: #3F3F3F;   border: 1px solid #777;   padding: 0px;  color: #FFF;  width: 64px;  cursor: pointer;}
+/* sidebar items / links */
+.sidebaritem{position:relative; 
+             top:165px; 
+             left:310px; 
+             width:190px; 
+             margin:0px; 
+}
+*html .sidebaritem {
+            position:relative; 
+            top:170px; 
+            left:20px; 
+            }
+*+html .sidebaritem {
+             position:relative; 
+            top:170px; 
+            left:20px; 
+            }
+
+/* sidebar items / links */
+
+.sidebaritem h1, .sidebaritem h3, .sidebaritem p{margin: 8px 10px 10px 12px;}
+.sidebaritem ul{width: 300px; padding-top: 4px;   margin:0px;}
+.sidebaritem li{ list-style: none;   padding: 0px 0px 4px 0px; }
+/* footer */
+#footer{position:relative; top:275px; left:0px; width: 720px;  height: 42px;  padding:0px;  text-align: center; color: #999;}
+#foot{height:20px; font-size:12px; color:#999;}
+

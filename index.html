@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="">
+<head>
+    <title>Roy設計作品集!!</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/default.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/mobilyselect.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script>
+    
+    <script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	  </script>
+	  <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+	
+    
+<style type="text/css">
+ul.gallery {
+width:190; /*--Adjust width according to your scenario--*/
+list-style: none;
+margin: 0; 
+padding: 0;
+overflow:hidden;
+}
+ul.gallery li {
+float: left;
+margin:0;
+padding: 0;
+text-align: center;
+-moz-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+-khtml-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+-webkit-border-radius: 3px; /*--CSS3 Rounded Corners--*/
+display: inline; /*--Gimp Fix aka IE6 Fix - Fixes double margin bug--*/
+}
+ul.gallery li a.thumb {
+width:190px; /*--Width of image--*/
+height:70px; /*--Height of image--*/
+
+cursor: pointer;
+}
+ul.gallery li span { /*--Used to crop image--*/
+width:190px;
+height:70px;
+overflow: hidden;
+display: block;
+}
+ul.gallery li a.thumb:hover {
+background: #333; /*--Hover effect for browser with js turned off--*/
+}
+
+ul.gallery li a {
+text-decoration: none;
+color: #777;
+display: block;
+font-size: 100%;
+}
+
+</style>
+
+
+<script type="text/javascript" src="sl/jquery.backgroundPosition.js"></script>
+
+<script type="text/javascript" src="js/slideshow.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// 幫 #hmenu li a 加上 hover 事件
+		$("#hmenu li a").hover(function(){
+			// 滑鼠移進選項時..
+			// 把背景圖片的位置往上移動
+			var _this = $(this),
+				_height = _this.height() * -1;
+			_this.stop().animate({
+				backgroundPosition: "0px " + _height + "px"
+			}, 200);
+		}, function(){
+			// 滑鼠移出選項時..
+			// 把背景圖片的位置移回原位
+			$(this).stop().animate({
+				backgroundPosition: "0px 0px"
+			}, 200);
+		});
+	});
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+	$(function() {
+	Slideshow.initialize('#slideshow', [
+	{
+		image: "images/1.jpg",
+		desc: "dix設計，精彩可期!",
+		title: "dix設計，精彩可期!",
+		url: "http://www.zzjs.net",
+		id: "473947"
+	},
+	{
+		image: "images/2.jpg",
+		desc: "dix設計，精彩可期！",
+		title: "dix設計，精彩可期！",
+		url: "http://www.alixixi.com",
+		id: "431948"
+	},
+	{
+		image: "images/3.jpg",
+		desc: "dix設計，精彩可期！",
+		title: "dix設計，精彩可期！",
+		url: "http://www.alixixi.com",
+		id: "494593"
+	},
+	
+	]);
+	
+	});
+//]]>
+</script>
+
+</head>
+<body>
+    <div id="page"> 
+    	
+        <div id="logo">
+            <h1><a href="#"><img src="images/logo_dix.jpg" width="140" height="90"/></a></h1>     
+        </div>
+        <!-- end of the logo -->
+        <div class="logo_line">&nbsp;</div>
+        <!-- star of the about us -->
+        <div id="main">
+            <div id="content">	
+
+                    <div class="about_area">
+                    	<h4>請選擇ROY設計作品項目進行瀏覽!!</h4>
+                        <div class="selecter">
+			                    <div class="selecterBtns">
+				                  <ul class="nolist">
+					                <li><a href="#" rel="all" class="active">所有類別&nbsp;/&nbsp;All</a></li>
+					                <li><a href="#" rel="poster">網頁設計&nbsp;/&nbsp;Website</a></li>
+					                <li><a href="#" rel="card">平面設計&nbsp;/&nbsp;Graphic Design</a></li>
+					                <li><a href="#" rel="logo">logo設計&nbsp;/&nbsp;Logo Design</a></li>
+					                <li><a href="#" rel="online">online gameDM設計</a></li>
+					                <!-- <li><a href="#" rel="online_ad">Flash動畫</a></li> -->
+				                  </ul>
+			                  </div>
+		                  	<div class="selecterContent">
+				                <ul class="nolist">
+				                	<li class="poster"><a href="https://chenroy1688.github.io/Guitar/" target="_blank"><img src="images/poster15.jpg" alt="" /></a></li>
+				                	<li class="poster"><a href="https://chenroy1688.github.io/sonicLiveOne/#" target="_blank"><img src="images/poster14.jpg" alt="" /></a></li>
+				                	<!-- <li class="poster"><a href="http://roy.kingsuede.info/pegasus/app/home.php" target="_blank"><img src="images/poster3.jpg" alt="" /></a></li>
+					                <li class="poster"><a href="http://www.bear313.com/" target="_blank"><img src="images/poster1.jpg" alt="網頁設計A" /></a></li>
+					                <li class="poster"><a href="http://roy.kingsuede.info/moon/" target="_blank"><img src="images/poster4.jpg" alt="" /></a></li>
+					                <li class="poster"><a href="http://www.smartcake.com.tw/" target="_blank"><img src="images/poster2.jpg" alt="" /></a></li>
+					                <li class="poster"><a href="http://www.chungkung.com.tw/" target="_blank"><img src="images/poster5.jpg" alt="" /></a></li> -->
+					                
+					                
+					                <li class="card"><a rel="example_group" href="images/card1b.jpg" title="LOGO吉祥人物設計"><img src="images/card1.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card2b.jpg" title="LOGO吉祥人物設計"><img src="images/card2.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card3b.jpg" title="馬克和露西童裝人物設計"><img src="images/card3.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card4b.jpg" title="卡提諾搖滾少年人物設計"><img src="images/card4.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card5b.jpg" title="永樂腳踏車名片"><img src="images/card5.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card6b.jpg" title="test"><img src="images/card6.jpg" alt="" /></a></li>
+					                <!-- <li class="card"><a rel="example_group" href="images/card7b.jpg" title="test"><img src="images/card7.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card8b.jpg" title="test"><img src="images/card8.jpg" alt="" /></a></li> -->
+					                <li class="card"><a rel="example_group" href="images/card9b.jpg" title="test"><img src="images/card9.jpg" alt="" /></a></li>
+					                <li class="card"><a rel="example_group" href="images/card10b.jpg" title="test"><img src="images/card10.jpg" alt="" /></a></li>
+					                <!-- <li class="card"><a rel="example_group" href="images/card11b.jpg" title="test"><img src="images/card11.jpg" alt="" /></a></li> -->
+					                <!-- <li class="card"><a rel="example_group" href="images/card12b.jpg" title="test"><img src="images/card12.jpg" alt="" /></a></li> -->
+					                
+					                <li class="logo"><a rel="example_group" href="images/logo_b1.jpg" title="永業集團LOGO設計"><img src="images/logo1.jpg" alt="" /></a></li>
+					                <li class="logo"><a rel="example_group" href="images/logo_b.jpg" title="永樂腳踏車LOGO設計"><img src="images/logo2.jpg" alt="" /></a></li>
+					                <li class="logo"><a rel="example_group" href="images/logo_b2.jpg" title="火車紅嘟嘟人物設計"><img src="images/logo3.jpg" alt="" /></a></li>
+					                <li class="logo"><a rel="example_group" href="images/logo_b3.jpg" title="金金娛樂城logo設計"><img src="images/logo4.jpg" alt="" /></a></li>
+					                
+					                <li class="online"><a rel="example_group" href="images/online_b1.jpg" title="六合彩運彩號碼DM設計"><img src="images/online1.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b2.jpg" title="100%高額再存DM設計"><img src="images/online2.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b3.jpg" title="手機獨享優惠DM設計"><img src="images/online3.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b4.jpg" title="手機獨享優惠DM設計"><img src="images/online4.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b5.jpg" title="扭轉乾坤"><img src="images/online5.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b6.jpg" title="再存優惠DM設計"><img src="images/online6.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b7.jpg" title="再存優惠DM文案設計"><img src="images/online7.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b8.jpg" title="手機投注DM文案設計"><img src="images/online8.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b9.jpg" title="51教育訓練DM設計"><img src="images/online9.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b10.jpg" title="寒冬送暖DM設計"><img src="images/online10.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b11.jpg" title="51教育訓練文案設計"><img src="images/online11.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b12.jpg" title="越南DM設計"><img src="images/online12.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b13.jpg" title="聖誕玩機率"><img src="images/online13.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b14.jpg" title="聖誕玩機率文案設計"><img src="images/online14.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b15.jpg" title="骰寶樂DM設計"><img src="images/online15.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b16.jpg" title="樂透轉輪DM設計"><img src="images/online16.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b17.jpg" title="龍在炯途DM設計"><img src="images/online17.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b18.jpg" title="多門龍虎DM設計"><img src="images/online18.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b19.jpg" title="拿36彩金DM設計"><img src="images/online19.jpg" alt="" /></a></li>
+					                <li class="online"><a rel="example_group" href="images/online_b20.jpg" title="暢通妳和我文案設計"><img src="images/online20.jpg" alt="" /></a></li>
+				                </ul>	
+			                 </div>
+		                   </div>
+                </div>   
+         <!-- end of the about us -->
+            </div><!-- content -->
+            <div class="clearing">&nbsp;</div> 
+        </div>
+        <!-- main -->
+        
+    </div><!-- page -->
+    <div id="footer">
+          <div id="foot_box">
+            <p>
+            	TEL：04-22491067 / PHONE:0977-098250 / E-MAIL:roy6874ya@yahoo.com.tw
+            </p>
+           <div>
+        </div>  
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("ul.gallery li").hover(function() { //On hover...
+		var thumbOver = $(this).find("img").attr("src"); //Get image url and assign it to 'thumbOver'
+		//Set a background image(thumbOver) on the <a> tag - Set position to bottom
+		$(this).find("a.thumb").css({'background' : 'url(' + thumbOver + ') no-repeat center bottom'});
+		//Animate the image to 0 opacity (fade it out)
+		$(this).find("span").stop().fadeTo('normal', 0 , function() {
+			$(this).hide() //Hide the image after fade
+		});
+	} , function() { //on hover out...
+		//Fade the image to full opacity 
+		$(this).find("span").stop().fadeTo('normal', 1).show();
+	});
+});
+</script>
+</body>
+</html>
